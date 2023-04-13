@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 
-  <script src="./js/main.js"></script>
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
   <!-- HEADER -->
@@ -20,41 +20,98 @@
       <a href="/" class="logo">
         <img src="./images/logo.png" alt="TOUSlesJOURS">
       </a>
-      <!-- sns -->
-      <div class="left-sub-menu">
-        <ul class="sns">
-          <li>
-            <a href="https://www.facebook.com/TOUSlesJOURS" target="_blank">facebook</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/cjtlj" target="_blank">twitter</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/touslesjours_kr/" target="_blank">instagram</a>
-          </li>
-        </ul>
-        <!-- 검색 영역 -->
-        <div>
-          <input type="text">
-          <span class="material-icons">search</span>
+      <div class="between">
+        <!-- 왼쪽 서브 메뉴 -->
+        <div class="left-sub-menu">
+          <ul class="sns">
+            <li>
+              <a href="https://www.facebook.com/TOUSlesJOURS" class="facebook" target="_blank" title="새창열림"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/cjtlj" class="twitter" target="_blank" title="새창열림"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/touslesjours_kr/" class="instagram" target="_blank" title="새창열림"></a>
+            </li>
+          </ul>
+          <!-- 검색 영역 -->
+          <div class="search">
+            <input type="text">
+            <span class="material-icons">search</span>
+            <button class="btn-close"></button>
+          </div>
+  
         </div>
-
+        <!-- 오른쪽 서브 메뉴 -->
+        <div class="right-sub-menu">
+          <ul class="menu">
+            <li>
+              <a href="javascript:void(0)">매장안내</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">고객센터</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">기사 채용안내</a>
+            </li>
+          </ul>
+          <button type="button">Login</button>
+        </div>
       </div>
-      <!-- 서브 메뉴 -->
-      <!-- <div class="right-sub-menu">
-        <ul class="menu">
-          <li>
-            <a href="javascript:void(0)">매장안내</a>
+      <!-- 메인 메뉴 -->
+      <nav>
+        <ul class="main-menu">
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">브랜드 스토리</a>
+            <ul>
+              <li>브랜드 스토리</li>
+              <li>뚜레쥬르 광고</li>
+              <li>뚜레쥬르 재료 이야기</li>
+              <li>글로벌 뚜레쥬르</li>
+              <li>뚜레쥬르 라뜰리에</li>
+              <li>뚜레쥬르 착한빵</li>
+              <li>뉴스 & 공지사항</li>
+            </ul>
           </li>
           <li>
-            <a href="javascript:void(0)">고객센터</a>
+            <a href="javascript:void(0)" class="item__name">새로워진 뚜레쥬르</a>
+            <ul>
+              <li>New 뚜레쥬르 살펴보기</li>
+              <li>건강한 데일리 베이커리</li>
+            </ul>
           </li>
           <li>
-            <a href="javascript:void(0)">기사 채용안내</a>
+            <a href="javascript:void(0)" class="item__name">제품 안내</a>
+            <ul>
+              <li>신제품</li>
+              <li>빵</li>
+              <li>케이크</li>
+              <li>델리</li>
+              <li>선물</li>
+              <li>디저트&스낵</li>
+              <li>음료</li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="item__name">이벤트&멤버십</a>
+            <ul>
+              <li>진행중인 이벤트</li>
+              <li>이벤트 당첨자</li>
+              <li>CJ ONE 멤버십</li>
+              <li>제휴 혜택</li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="item__name">뚜레쥬르 앱&온라인 쇼핑몰</a>
+            <ul>
+              <li>뚜레쥬르 앱</li>
+              <li>홈페이지 전용 예약 배송</li>
+              <li>꽃&케이크 택배 배송</li>
+              <li>대량 구매 문의</li>
+            </ul>
           </li>
         </ul>
-        <button>Login</button>
-      </div> -->
+      </nav>
 
     </div>
   </header>
