@@ -1,7 +1,9 @@
 /* COMMON */
 body {
+  font-family: "Nanum Barun Gothic","돋움",sans-serif;
   font-size: 12px;
-
+  
+  height: 1200px;
 }
 
 a {
@@ -13,31 +15,47 @@ img {
   display: block;
 }
 
-/* HEADER */
-header {
-  width: 100%;
-  height: 147px;
-  background-color: #0d4633;
-}
 .inner {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
 
+/* HEADER */
+header {
+  background-color: rgb(13, 70, 51);
+  
+  width: 100%;
+  position: fixed;
+  top: 0;
+  /* height: 147px; */
+  z-index: 9;
+
+}
+header .header-top {
+  height: 102px;
+  border-bottom: 1px solid #c5d5d0;
+
+}
+
+
 /* 로고 영역 */
 header .logo {
-  /* border-bottom: 1px solid #c5d5d0; */
+  position: absolute;
+  top: 35px;
+  right: 0;
+  left: 0;
 }
 header .logo img {
   display: inline;
-
 }
-header .between {
-  display: flex;
-  justify-content: space-between;
 
+header .between {
+  height: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* 왼쪽 서브 메뉴 */
@@ -86,16 +104,19 @@ header input {
   width: 1px;
   height: 32px;
   font-size: 11px;
-  padding: 5px 7px;
+  /* padding: 5px 7px; */
+  padding: 0;
+  /* border: 1px solid #c5d5d0; */
+  border: 0;
   box-sizing: border-box;
   background-color: #c5d5d0;
-  border: 1px solid #c5d5d0;
-  transition: width .3s;
-  display: none;
+  transition: .5s;
+  visibility: hidden;
 }
 header input.focused {
   width: 135px;
-  display: block;
+  visibility: visible;
+
 }
 header .material-icons {
   width: 32px;
@@ -108,7 +129,6 @@ header .material-icons {
 }
 header .material-icons.focused {
   right: 0;
-
 }
 header .btn-close {
   width: 11px;
@@ -149,6 +169,47 @@ header .right-sub-menu button {
 }
 
 /* 메인 메뉴 */
-header .main-menu {
+header .header-bottom .bg-menu {
+  height: 193px;
+  background-color: rgba(13, 70, 51, 0.5);
+  display: none;
+}
+header .header-bottom .main-menu {
   display: flex;
+  /* border-top: 1px solid #c5d5d0; */
+
+}
+header .header-bottom .main-menu .item {
+  width: 200px;
+  height: 42px;
+  padding: 13px 0;
+  box-sizing: border-box;
+}
+header .header-bottom .main-menu .item .item__name {
+  font-size: 15px;
+  font-weight: 700;
+}
+header .header-bottom .main-menu .item .item__name:hover {
+  color: rgb(242, 107, 36);
+  text-decoration: underline;
+}
+header .header-bottom .main-menu .item .item__contents {
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  position: fixed;
+  left: 0;
+
+  /* background-color: darkgray; */
+}
+
+header .main-menu .item .item__contents .contents__menu {
+  /* font-size: 12px;
+  /* color: #fff; */
+  /* text-align: left; */
+}
+header .main-menu .item .item__contents .contents__menu:nth-child(1) {
+
+
 }
