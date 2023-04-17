@@ -42,10 +42,12 @@ header .header-top {
 
 /* 로고 영역 */
 header .logo {
+  width: 268px;
+  height: 37px;
   position: absolute;
   top: 35px;
-  right: 0;
-  left: 0;
+  /* right: 0; */
+  left: 366px;
 }
 header .logo img {
   display: inline;
@@ -100,7 +102,7 @@ header .search {
   height: 32px;
   display: flex;
 }
-header input {
+header .search input {
   width: 1px;
   height: 32px;
   font-size: 11px;
@@ -113,12 +115,12 @@ header input {
   transition: .5s;
   visibility: hidden;
 }
-header input.focused {
+header .search input.focused {
   width: 135px;
   visibility: visible;
 
 }
-header .material-icons {
+header .search .material-icons {
   width: 32px;
   height: 32px;
   color: #fff;
@@ -127,10 +129,10 @@ header .material-icons {
   box-sizing: border-box;
   cursor: pointer;
 }
-header .material-icons.focused {
+header .search .material-icons.focused {
   right: 0;
 }
-header .btn-close {
+header .search .btn-close {
   width: 11px;
   height: 11px;
   padding: 7px;
@@ -142,7 +144,7 @@ header .btn-close {
   display: none;
 
 }
-header .btn-close.focused {
+header .search .btn-close.focused {
   display: block;
 }
 
