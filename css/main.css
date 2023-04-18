@@ -4,7 +4,7 @@ body {
   font-size: 12px;
   
   height: 1200px;
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 a {
@@ -37,9 +37,7 @@ header {
 header .header-top {
   height: 102px;
   border-bottom: 1px solid #c5d5d0;
-
 }
-
 
 /* 로고 영역 */
 header .logo {
@@ -172,12 +170,18 @@ header .right-sub-menu button {
 }
 
 /* 메인 메뉴 */
+header .header-bottom {
+  position: relative;
+}
 header .header-bottom .bg-menu {
   width: 100%;
   height: 193px;
   background-color: rgba(13, 70, 51, 0.5);
   position: absolute;
   display: none;
+}
+header .header-bottom:hover .bg-menu {
+  display: block;
 }
 header .header-bottom .main-menu {
   display: flex;
@@ -189,7 +193,7 @@ header .header-bottom .main-menu .item {
   height: 42px;
   padding: 13px 0;
   box-sizing: border-box;
-
+  position: relative;
 }
 header .header-bottom .main-menu .item .item__name {
   font-size: 15px;
@@ -209,7 +213,7 @@ header .header-bottom .main-menu .item .item__contents {
 
   display: none;
 }
-header .header-bottom .main-menu .item .item__contents .hover {
+header .header-bottom .main-menu .item:hover .item__contents {
   display: block;
 }
 header .header-bottom .main-menu .item:nth-child(1) .item__contents .contents__menu {
@@ -238,3 +242,23 @@ header .header-bottom .main-menu .item .item__contents .contents__menu li {
   text-align: left;
   line-height: 20px;
 }
+header .header-bottom .main-menu .item .item__contents .contents__menu li:hover {
+  color: rgb(242, 107, 36);
+  cursor: pointer;
+}
+
+.main-contents {
+  margin-top: 144px;
+  background-color: #f7f0da;;
+}
+/* EVENT */
+.event {
+  width: 394px;
+  height: 405px;
+}
+
+
+/* 
+추천제품 부분 마우스오버 참고 : 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+*/
