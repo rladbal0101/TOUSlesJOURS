@@ -247,14 +247,48 @@ header .header-bottom .main-menu .item .item__contents .contents__menu li:hover 
   cursor: pointer;
 }
 
+/* SECTION */
 .main-contents {
   margin-top: 144px;
   background-color: #f7f0da;;
 }
+
+/* left-section */
 /* EVENT */
 .event {
   width: 394px;
   height: 405px;
+}
+
+/* right-section */
+/* 추천제품 */
+.swiper-slide{
+  width: 504px;
+  height: 402px;
+  position: relative;
+}
+.slide-left.product1 {
+  width: 303px;
+  height: 352px;
+}
+.slide-left.product1 img {
+  width: 100%;
+}
+.slide-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.slide-right .product2,
+.slide-right .product3 {
+  width: 200px;
+  height: 200px;
+}
+.slide-right .product2 img {
+  width: 100%;
+}
+.slide-right .product3 img {
+  width: 100%;
 }
 
 
