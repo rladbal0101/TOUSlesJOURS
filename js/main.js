@@ -26,10 +26,20 @@ new Swiper('.event .swiper', {
   direction: 'horizontal', // 수평 슬라이드(기본값)
   loop: true, // 반복 재생 여부
   autoplay: {
-    delay: 2000 // 5초마다 슬라이드 바뀜(기본값: 3000)
+    delay: 2000 // 2초마다 슬라이드 바뀜(기본값: 3000)
   }, // 자동 재생 여부
   pagination: { // 페이지 번호 사용
-    el: '.promotion .swiper-pagination', // 페이지 번호 요소 선택자
+    el: '.event .swiper-pagination', // 페이지 번호 요소 선택자
     clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
   },
+});
+
+// 추천제품 수평 슬라이드 기능
+new Swiper('.recommended-product .swiper', {
+  direction: 'horizontal', // 수평 슬라이드(기본값)
+  loop: true, // 반복 재생 여부
+  autoplay: {
+    delay: 3000 // 5초마다 슬라이드 바뀜(기본값: 3000)
+  }, // 자동 재생 여부
+  
 });

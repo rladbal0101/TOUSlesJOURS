@@ -4,7 +4,7 @@ body {
   font-size: 12px;
   
   height: 1200px;
-  /* background-color: #333; */
+  background-color: #333;
 }
 
 a {
@@ -252,20 +252,47 @@ header .header-bottom .main-menu .item .item__contents .contents__menu li:hover 
   margin-top: 144px;
   background-color: #f7f0da;;
 }
+.main-contents .section1 {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* left-section */
+.left-section {
+  margin-right: 10px;
+}
 /* EVENT */
 .event {
   width: 394px;
   height: 405px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.event .swiper-pagination {
+  bottom: 0;
+  height: 20px;
+  background-color: #333;
+  opacity: 0.7;
+  padding: 5px 0 0 0;
 }
 
 /* right-section */
 /* 추천제품 */
-.swiper-slide{
-  width: 504px;
-  height: 402px;
+.recommended-product {
+  width: 596px;
+  background-color: #fff;
+  margin-bottom: 10px;
+
+}
+.right-section .swiper-slide {
+  /* width: 504px; */
+  /* height: 402px; */
   position: relative;
+  display: flex;
+  /* padding: 0 46px; */
+}
+.right-section .swiper-slide .text-wrap {
+  color: #333;
 }
 .slide-left.product1 {
   width: 303px;
@@ -274,11 +301,9 @@ header .header-bottom .main-menu .item .item__contents .contents__menu li:hover 
 .slide-left.product1 img {
   width: 100%;
 }
-.slide-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+/* .slide-right {
+
+} */
 .slide-right .product2,
 .slide-right .product3 {
   width: 200px;
